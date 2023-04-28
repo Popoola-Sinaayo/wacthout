@@ -21,7 +21,7 @@ const Hero = () => {
         <button className='bg-gradient-to-r from-[#00A695] to-[#1D4F9A] text-white rounded-lg px-[4.375rem] py-3.5' onClick={openModal}>Book a Demo</button>
       </div>
       <div>
-        <img src={HeroImg} alt="hero image" />
+        <img className="lg:w-[100rem] xl:w-[90rem] 2xl:w-full" src={HeroImg} alt="hero image" />
       </div>
       <ContactModal isOpen={isOpen} closeModal={closeModal} />
     </div>

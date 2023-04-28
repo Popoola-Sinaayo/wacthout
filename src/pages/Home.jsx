@@ -12,8 +12,8 @@ const Home = () => {
     <div className='px-[3rem] sm:px-[5rem] md:px-[6rem] lg:px-[8.75rem]'>
       <Navbar />
       <Hero />
-      <About />
       <WhyChoose />
+      <About />
       <Testimonial />
       <FAQ />
       <Footer />
