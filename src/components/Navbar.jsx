@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center justify-between mt-5'>
-      <img className='' src={Logo} alt="logo" />
+      <img className='max-sm:w-32' src={Logo} alt="logo" />
       <button className='border-2 border-black rounded-full px-5 py-2' onClick={openModal}>Contact us</button>
       <ContactModal isOpen={isOpen} closeModal={closeModal} />
     </div>

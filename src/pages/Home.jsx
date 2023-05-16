@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div className='px-[3rem] sm:px-[5rem] md:px-[6rem] lg:px-[8.75rem]'>
+    <div className='px-[1.5rem] sm:px-[5rem] md:px-[6rem] lg:px-[8.75rem]'>
       <Navbar />
       <Hero />
       <WhyChoose />
