@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
-import { Dialog, Transition } from '@headlessui/react';
+import React, { Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 import ContactModalImg from "../assets/contactModal.svg";
-import { RxCross2 } from "react-icons/rx"
+import { RxCross2 } from "react-icons/rx";
 
 const ContactModal = ({ isOpen, closeModal }) => {
   const handleForm = (e) => {
     e.preventDefault();
-  }
+  };
 
   return (
     <Transition appear show={isOpen} as={Fragment}>
@@ -35,24 +35,58 @@ const ContactModal = ({ isOpen, closeModal }) => {
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
-                <div className='max-sm:block flex items-center justify-between'>
-                  <img className='max-sm:w-[100%] max-sm:h-[600px] w-72' src={ContactModalImg} alt="contact modal image" />
-                  <div className='px-10 relative'>
-                    <RxCross2 className='absolute -top-12 left-[27.5rem] cursor-pointer hover:bg-gray-300 text-2xl' onClick={closeModal} />
-                    <Dialog.Title
-                      as="h3"
-                      className="text-3xl font-bold"
-                    >
+                <div className="flex items-center justify-between max-sm:flex-col">
+                  <img
+                    className="max-sm:w-[100%] max-sm:hidden w-72"
+                    src={ContactModalImg}
+                    alt="contact modal image"
+                  />
+                  <div className="px-10 relative max-sm:py-20">
+                    <RxCross2
+                      className="absolute -top-12 left-[27.5rem] max-sm:left-[1rem] max-sm:top-[1rem] cursor-pointer hover:bg-gray-300 text-2xl"
+                      onClick={closeModal}
+                    />
+                    <Dialog.Title as="h3" className="text-3xl font-bold">
                       Get in touch
                     </Dialog.Title>
                     <p>24/7 We answer your questions and problems</p>
                     <div className="mt-8">
                       <form onSubmit={handleForm}>
-                        <input className='border rounded w-full px-2 py-2 mb-3' type="text" name="name" id="" placeholder='Your name' />
-                        <input className='border rounded w-full px-2 py-2 mb-3' type="text" name="address" id="" placeholder='Your email address' />
-                        <input className='border rounded w-full px-2 py-2 mb-3' type="number" name="number" id="" placeholder='Your mobile number' />
-                        <textarea className='border rounded w-full px-2 py-2 mb-3' name="message" id="" cols="30" rows="4" placeholder='Write your message'></textarea>
-                        <input onClick={closeModal} className='w-full bg-gradient-to-r from-[#00A695] to-[#1D4F9A] text-white rounded-lg px-[4.375rem] py-3' type="submit" value="Send" />
+                        <input
+                          className="border rounded w-full px-2 py-2 mb-3"
+                          type="text"
+                          name="name"
+                          id=""
+                          placeholder="Your name"
+                        />
+                        <input
+                          className="border rounded w-full px-2 py-2 mb-3"
+                          type="text"
+                          name="address"
+                          id=""
+                          placeholder="Your email address"
+                        />
+                        <input
+                          className="border rounded w-full px-2 py-2 mb-3"
+                          type="number"
+                          name="number"
+                          id=""
+                          placeholder="Your mobile number"
+                        />
+                        <textarea
+                          className="border rounded w-full px-2 py-2 mb-3"
+                          name="message"
+                          id=""
+                          cols="30"
+                          rows="4"
+                          placeholder="Write your message"
+                        ></textarea>
+                        <input
+                          onClick={closeModal}
+                          className="w-full bg-gradient-to-r from-[#00A695] to-[#1D4F9A] text-white rounded-lg px-[4.375rem] py-3"
+                          type="submit"
+                          value="Send"
+                        />
                       </form>
                     </div>
                   </div>
@@ -63,7 +97,7 @@ const ContactModal = ({ isOpen, closeModal }) => {
         </div>
       </Dialog>
     </Transition>
-  )
-}
+  );
+};
 
 export default ContactModal;
