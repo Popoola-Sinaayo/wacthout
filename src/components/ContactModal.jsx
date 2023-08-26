@@ -35,8 +35,8 @@ const ContactModal = ({ isOpen, closeModal }) => {
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
-                <div className='flex items-center justify-between'>
-                  <img className='w-72' src={ContactModalImg} alt="contact modal image" />
+                <div className='max-sm:block flex items-center justify-between'>
+                  <img className='max-sm:w-[100%] max-sm:h-[600px] w-72' src={ContactModalImg} alt="contact modal image" />
                   <div className='px-10 relative'>
                     <RxCross2 className='absolute -top-12 left-[27.5rem] cursor-pointer hover:bg-gray-300 text-2xl' onClick={closeModal} />
                     <Dialog.Title
