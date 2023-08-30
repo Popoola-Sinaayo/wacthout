@@ -11,17 +11,17 @@ const faq = [
   },
   {
     id: 3,
-    question: "How does WatchOwl ensure that the guard does not doze off during his duty?",
+    question: "How does Watchout ensure that the guard does not doze off during his duty?",
     answer: "The application will only work with security guards owning a smartphone and a decent internet connection. (We encourage the agency to hire on the basis of availability of a smartphone and a internet connection)."
   },
   {
     id: 4,
-    question: "How do the guard’s benefit from using WatchOwl?",
+    question: "How do the guard’s benefit from using Watchout?",
     answer: "The application will only work with security guards owning a smartphone and a decent internet connection. (We encourage the agency to hire on the basis of availability of a smartphone and a internet connection)."
   },
   {
     id: 5,
-    question: "Can I access the trial version of WatchOwl ?",
+    question: "Can I access the trial version of Watchout ?",
     answer: "The application will only work with security guards owning a smartphone and a decent internet connection. (We encourage the agency to hire on the basis of availability of a smartphone and a internet connection)."
   }
 ];

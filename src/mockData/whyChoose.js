@@ -16,7 +16,7 @@ const whyChoose = [
     id: 2,
     number: "02",
     title: "Enhanced Performance",
-    description: "By using WatchOwl’s platform, security guards can perform at their best. The application provides them with real-time updates, allowing them to make quick decisions and take immediate action",
+    description: "By using Watchout’s platform, security guards can perform at their best. The application provides them with real-time updates, allowing them to make quick decisions and take immediate action",
     img: Performance
   },
   {
@@ -37,7 +37,7 @@ const whyChoose = [
     id: 5,
     number: "05",
     title: "Real-Time Monitoring",
-    description: "With WatchOwl's real-time monitoring, security agencies can quickly respond to any security issues and address them before they become bigger problems.",
+    description: "With Watchout's real-time monitoring, security agencies can quickly respond to any security issues and address them before they become bigger problems.",
     img: Monitoring
   }
 ]
